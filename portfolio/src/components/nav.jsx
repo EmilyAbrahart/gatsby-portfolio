@@ -3,8 +3,10 @@ import { Link } from "gatsby"
 
 const Nav = () => {
   return (
-    <div>
-      <Link to="/"><div>Emily Abrahart</div></Link>
+    <nav>
+      <Link to="/">
+        <h1>Emily Abrahart</h1>
+      </Link>
       <ul>
         <Link to="/about">
           <li>About</li>
@@ -22,7 +24,7 @@ const Nav = () => {
           <li>Github</li>
         </a>
       </ul>
-    </div>
+    </nav>
   )
 }
 

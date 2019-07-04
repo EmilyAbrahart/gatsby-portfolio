@@ -1,13 +1,12 @@
 import React from "react"
-import Nav from "../components/nav"
+import Layout from "../components/layout"
 
 const AboutPage = () => {
   return (
-    <div>
-      <Nav />
+    <Layout>
       <h1>About Me</h1>
       <p>Bio will go here...</p>
-    </div>
+    </Layout>
   )
 }
 

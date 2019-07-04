@@ -1,14 +1,13 @@
-import React from 'react'
-import Nav from "../components/nav"
+import React from "react"
+import Layout from "../components/layout"
 
 const ProjectsPage = () => {
   return (
-<div>
-  <Nav />
-  <h1>Projects</h1>
-  <p>All projects will go here.</p>
-</div>
+    <Layout>
+      <h1>Projects</h1>
+      <p>All projects will go here.</p>
+    </Layout>
   )
 }
 
-export default ProjectsPage;
+export default ProjectsPage

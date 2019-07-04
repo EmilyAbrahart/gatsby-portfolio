@@ -1,13 +1,12 @@
 import React from "react"
-import Nav from "../components/nav"
+import Layout from "../components/layout"
 
 const BlogPage = () => {
   return (
-    <div>
-      <Nav />
+    <Layout>
       <h1>Blog</h1>
       <p>Blog will go here...</p>
-    </div>
+    </Layout>
   )
 }
 
