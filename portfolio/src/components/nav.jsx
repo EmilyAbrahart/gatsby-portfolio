@@ -1,30 +1,61 @@
 import React from "react"
 import { Link } from "gatsby"
+import styled from "styled-components"
+import { FlexFunc, header_font, color_light } from "../styles/reusables"
+
+const PageNav = styled.nav`
+  ${FlexFunc("row", "space-between", "center")}
+  width: 100%;
+  padding: 0.5rem 0rem;
+  a {
+    text-decoration: none;
+    color: ${color_light};
+  }
+`
+
+const LinkList = styled.ul`
+  ${FlexFunc("row", "space-between", "center")}
+`
+
+const NavLink = styled.li`
+  list-style-type: none;
+  padding: 0 1rem;
+  font-family: ${header_font};
+  font-size: 1rem;
+  margin-right: 1rem;
+`
+
+const PageTitle = styled.h1`
+  font-family: ${header_font};
+  font-size: 1.2rem;
+  font-weight: normal;
+  margin-left: 1rem;
+`
 
 const Nav = () => {
   return (
-    <nav>
+    <PageNav>
       <Link to="/">
-        <h1>Emily Abrahart</h1>
+        <PageTitle>Emily Abrahart</PageTitle>
       </Link>
-      <ul>
+      <LinkList>
         <Link to="/about">
-          <li>About</li>
+          <NavLink>About</NavLink>
         </Link>
         <Link to="/projects">
-          <li>Projects</li>
+          <NavLink>Projects</NavLink>
         </Link>
         <Link to="/blog">
-          <li>Blog</li>
+          <NavLink>Blog</NavLink>
         </Link>
         <Link to="/contact">
-          <li>Contact</li>
+          <NavLink>Contact</NavLink>
         </Link>
         <a href="https://github.com/EmilyAbrahart" target="_blank">
-          <li>Github</li>
+          <NavLink>Github</NavLink>
         </a>
-      </ul>
-    </nav>
+      </LinkList>
+    </PageNav>
   )
 }
 
