@@ -1,35 +1,24 @@
 import React from "react"
 import Nav from "./nav"
-import Footer from "./footer"
 import { Helmet } from "react-helmet"
 import styled from "styled-components"
 import "../styles/index.css"
-import {
-  FlexFunc,
-  color_dark,
-  text_font,
-  header_font,
-} from "../styles/reusables"
+import { FlexFunc, color_dark } from "../styles/reusables"
+import PersonalPhoto from "../img/self-photo.jpg"
 
 const LayoutDiv = styled.div`
   color: ${color_dark};
   height: 100vh;
-  ${FlexFunc("column", "flex-start", "center")};
+  ${FlexFunc("column", "center", "center")};
 
-`
-const ContentDiv = styled.div`
-  ${FlexFunc("column", "flex-start", "center")};
-  font-family: ${text_font};
-  width: 100%;
-  height: 75%;
-  border-radius: 2rem;
-
-  h1 {
-    font-family: ${header_font};
+  img {
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
   }
 `
 
-const Layout = props => {
+const HomeLayout = props => {
   return (
     <LayoutDiv>
       <Helmet>
@@ -39,11 +28,11 @@ const Layout = props => {
           rel="stylesheet"
         ></link>
       </Helmet>
+      <img src={PersonalPhoto} alt="Emily Abrahart" />
       <Nav />
-      <ContentDiv>{props.children}</ContentDiv>
-      <Footer />
+      <div>{props.children}</div>
     </LayoutDiv>
   )
 }
 
-export default Layout
+export default HomeLayout

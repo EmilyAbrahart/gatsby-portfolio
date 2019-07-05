@@ -1,12 +1,13 @@
 import React from "react"
-import Layout from "../components/layout"
+import HomeLayout from "../components/layout-home"
+import styled from "styled-components"
+import { FlexFunc } from "../styles/reusables"
 
 const IndexPage = () => {
   return (
-    <Layout>
-      <h1>Emily Abrahart</h1>
+    <HomeLayout>
       <p>Full stack web developer, currently studying at Lambda School.</p>
-    </Layout>
+    </HomeLayout>
   )
 }
 

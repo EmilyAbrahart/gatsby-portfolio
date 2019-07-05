@@ -1,20 +1,20 @@
 import React from "react"
 import { Link } from "gatsby"
 import styled from "styled-components"
-import { FlexFunc, header_font, color_light } from "../styles/reusables"
+import { FlexFunc, header_font, color_dark } from "../styles/reusables"
 
 const PageNav = styled.nav`
-  ${FlexFunc("row", "space-between", "center")}
+  ${FlexFunc("column", "space-between", "center")}
   width: 100%;
   padding: 0.5rem 0rem;
   a {
     text-decoration: none;
-    color: ${color_light};
+    color: ${color_dark};
   }
 `
 
 const LinkList = styled.ul`
-  ${FlexFunc("row", "space-between", "center")}
+  ${FlexFunc("row", "center", "center")}
 `
 
 const NavLink = styled.li`
@@ -27,9 +27,8 @@ const NavLink = styled.li`
 
 const PageTitle = styled.h1`
   font-family: ${header_font};
-  font-size: 1.2rem;
-  font-weight: normal;
-  margin-left: 1rem;
+  font-size: 3rem;
+
 `
 
 const Nav = () => {
@@ -44,9 +43,6 @@ const Nav = () => {
         </Link>
         <Link to="/projects">
           <NavLink>Projects</NavLink>
-        </Link>
-        <Link to="/blog">
-          <NavLink>Blog</NavLink>
         </Link>
         <Link to="/contact">
           <NavLink>Contact</NavLink>
