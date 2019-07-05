@@ -44,6 +44,7 @@ const ContactPage = () => {
     <Layout>
       <h1>Contact Me</h1>
       <ContactForm name="contact" method="POST" data-netlify="true">
+      <input type="hidden" name="form-name" value="contact" />
         <ContactParagraph>
           <ContactLabel>
             Name: <br /> <ContactInput type="text" name="name" />
