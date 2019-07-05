@@ -55,6 +55,7 @@ export const Button = (backgroundColor, color) => {
   `
 }
 
+// Input Styling
 export const Input = width => {
   return `
     width: ${width};
