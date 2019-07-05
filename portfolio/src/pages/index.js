@@ -1,12 +1,16 @@
 import React from "react"
 import HomeLayout from "../components/layout-home"
-import styled from "styled-components"
-import { FlexFunc } from "../styles/reusables"
+import Skills from '../components/skills'
+import styled from 'styled-components'
 
+const Tagline = styled.p`
+text-align: center;
+`
 const IndexPage = () => {
   return (
     <HomeLayout>
-      <p>Full stack web developer, currently studying at Lambda School.</p>
+      <Tagline>Full Stack Web Developer</Tagline>
+      <Skills />
     </HomeLayout>
   )
 }

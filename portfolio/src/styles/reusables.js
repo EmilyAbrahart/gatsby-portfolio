@@ -2,17 +2,12 @@
 // Colors
 export const color_light = "#ffffff"
 export const color_dark = "#1a2035"
-export const color_primary = "#31364a"
-export const color_secondary = "#219ea4"
-export const color_positive = "#c3e88d"
-export const color_neutral = "#ffed8d"
-export const color_negative = "#eb5372"
+export const color_accent = "#eb5372"
 export const color_subtle = "#d3d3d3"
 export const color_transparent = "rgba(0,0,0,0)"
 export const shadow = "0px 4px 4px rgba(0, 0, 0, 0.3)"
 
 // Fonts
-export const title_font= "'Handlee', cursive"
 export const header_font = "'Open Sans', sans-serif"
 export const text_font = "'Open Sans Condensed', sans-serif"
 

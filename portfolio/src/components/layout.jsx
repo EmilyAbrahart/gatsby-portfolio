@@ -1,6 +1,7 @@
 import React from "react"
 import Nav from "./nav"
 import Footer from "./footer"
+import Socials from "./socials"
 import { Helmet } from "react-helmet"
 import styled from "styled-components"
 import "../styles/index.css"
@@ -39,6 +40,7 @@ const Layout = props => {
           rel="stylesheet"
         ></link>
       </Helmet>
+      <Socials />
       <Nav />
       <ContentDiv>{props.children}</ContentDiv>
       <Footer />

@@ -47,9 +47,6 @@ const Nav = () => {
         <Link to="/contact">
           <NavLink>Contact</NavLink>
         </Link>
-        <a href="https://github.com/EmilyAbrahart" target="_blank">
-          <NavLink>Github</NavLink>
-        </a>
       </LinkList>
     </PageNav>
   )

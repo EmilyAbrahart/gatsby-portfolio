@@ -3,7 +3,7 @@ import Nav from "./nav"
 import { Helmet } from "react-helmet"
 import styled from "styled-components"
 import "../styles/index.css"
-import { FlexFunc, color_dark } from "../styles/reusables"
+import { FlexFunc, color_dark, text_font } from "../styles/reusables"
 import PersonalPhoto from "../img/self-photo.jpg"
 
 const LayoutDiv = styled.div`
@@ -17,6 +17,7 @@ const LayoutDiv = styled.div`
     border-radius: 50%;
   }
 `
+
 
 const HomeLayout = props => {
   return (
