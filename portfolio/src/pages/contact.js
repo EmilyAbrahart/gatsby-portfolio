@@ -3,7 +3,6 @@ import Layout from "../components/layout"
 import styled from "styled-components"
 import {
   Input,
-  color_primary,
   FlexFunc,
   color_dark,
   Button,
@@ -22,13 +21,13 @@ const ContactParagraph = styled.p`
 
 const ContactInput = styled.input`
 ${Input("50%")}
-border: 1px solid ${color_primary};
+border: 1px solid ${color_dark};
 `
 
 const ContactTextArea = styled.textarea`
 ${Input("50%")}
-border: 1px solid ${color_primary};
-height: 300px;
+border: 1px solid ${color_dark};
+height: 200px;
 `
 
 const ContactButton = styled.button`

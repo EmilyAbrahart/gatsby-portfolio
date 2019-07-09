@@ -1,6 +1,6 @@
 import React from "react"
 import Nav from "./nav"
-import Footer from "./footer"
+
 import Socials from "./socials"
 import { Helmet } from "react-helmet"
 import styled from "styled-components"
@@ -43,7 +43,7 @@ const Layout = props => {
       <Socials />
       <Nav />
       <ContentDiv>{props.children}</ContentDiv>
-      <Footer />
+     
     </LayoutDiv>
   )
 }

@@ -1,9 +1,10 @@
 import React from "react"
 import Nav from "./nav"
+import Socials from './socials'
 import { Helmet } from "react-helmet"
 import styled from "styled-components"
 import "../styles/index.css"
-import { FlexFunc, color_dark, text_font } from "../styles/reusables"
+import { FlexFunc, color_dark } from "../styles/reusables"
 import PersonalPhoto from "../img/self-photo.jpg"
 
 const LayoutDiv = styled.div`
@@ -29,6 +30,7 @@ const HomeLayout = props => {
           rel="stylesheet"
         ></link>
       </Helmet>
+      <Socials />
       <img src={PersonalPhoto} alt="Emily Abrahart" />
       <Nav />
       <div>{props.children}</div>

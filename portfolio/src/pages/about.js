@@ -3,13 +3,19 @@ import Layout from "../components/layout"
 import styled from "styled-components"
 import Skills from '../components/skills'
 
-
+const AboutContainer = styled.div`
+width: 60%;
+ p{
+   font-size: 1rem;
+   line-height: 1.3rem;
+ }
+`
 
 const AboutPage = () => {
   return (
     <Layout>
-      <div>
-        <h1>About Me</h1>
+      <AboutContainer>
+        <h2>About Me</h2>
         <p>
           I'm a full stack web developer currently studying with Lambda School
           and based in London, UK. Having a passion for technology from young
@@ -18,7 +24,7 @@ const AboutPage = () => {
         </p>
         <h2>Skills</h2>
         <Skills />
-      </div>
+      </AboutContainer>
     </Layout>
   )
 }

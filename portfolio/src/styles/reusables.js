@@ -9,7 +9,7 @@ export const shadow = "0px 4px 4px rgba(0, 0, 0, 0.3)"
 
 // Fonts
 export const header_font = "'Open Sans', sans-serif"
-export const text_font = "'Open Sans Condensed', sans-serif"
+export const text_font = "'Open Sans', sans-serif"
 
 //Media Queries
 export const mobile = "(max-device-width : 480px)"
